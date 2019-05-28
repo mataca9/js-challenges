@@ -3,7 +3,7 @@ const Trials = require('./Trials');
 
 
 class TestCase {
-    constructor (parameters, result) {
+    constructor(parameters, result) {
         this.parameters = parameters;
         this.result = result;
     }
@@ -27,7 +27,7 @@ class TrialTests {
                 assert.equal(this.trials.trial01.apply(null, c.parameters), c.result);
             });
             this.successHandler(title);
-        } catch(error) {
+        } catch (error) {
             this.errorHandler(title, cases[current].parameters, error);
         }
     }
@@ -45,7 +45,7 @@ class TrialTests {
                 assert.equal(this.trials.trial02.apply(null, c.parameters), c.result);
             });
             this.successHandler(title);
-        } catch(error) {
+        } catch (error) {
             this.errorHandler(title, cases[current].parameters, error);
         }
     }
@@ -63,7 +63,7 @@ class TrialTests {
                 assert.equal(this.trials.trial03.apply(null, c.parameters), c.result);
             });
             this.successHandler(title);
-        } catch(error) {
+        } catch (error) {
             this.errorHandler(title, cases[current].parameters, error);
         }
     }
@@ -77,9 +77,9 @@ class TrialTests {
     errorHandler(title, parameter, error) {
         console.log(`[${title} - ERROR]`);
         console.log(`The function didn't get the correct result !!`);
-        console.log('Parameters: ' + parameter.join(', '));
-        console.log('Actual:\n' + error.actual);
-        console.log('Expected:\n' + error.expected);
+        console.log(`Parameters: ${parameter.join(', ')}`);
+        console.log(`Actual:\n${error.actual}`);
+        console.log(`Expected:\n${error.expected}`);
         console.log(new Array(20).join('='));
     }
 }
