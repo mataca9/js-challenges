@@ -1,5 +1,5 @@
 # js-trials
-Simple js challenges for educational purposes written in nodejs
+Simple programming challenges for educational purposes written in nodejs
 
 ## Prerequisite
 - nodejs
