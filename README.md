@@ -5,7 +5,7 @@ Simple js challenges for educational purposes written in nodejs
 - nodejs
 
 ## Run tests
-node Main.js
+`node Main.js`
 
 ## Info
 - Complete Trials.js then run.
