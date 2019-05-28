@@ -20,7 +20,7 @@ class Trial {
     }
 
     /*
-    Description: Return a square of size n string made of asterisks using a number as parameter
+    Description: Return a square of size n made of asterisks using a number as parameter
     Example: 
         - Invokation: trial03(3)
         - Result:   ***
